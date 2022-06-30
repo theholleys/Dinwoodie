@@ -289,7 +289,7 @@ body {
     border-bottom-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
     background-image: url("../../images/Under car 1.png");
-  
+    z-index: 1;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -325,6 +325,7 @@ body {
     border-top-right-radius: 1rem;
     text-shadow: 2px 2px 5px black;
     grid-gap: 0px;
+    z-index: 1;
 }
 .opening-times h4 {
     font-size: 2rem;
@@ -427,9 +428,11 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: #231F20;
+    background-color: #231f20b6;
     padding: 1em 0em;
+    z-index: 1;
 }
+
 .personal-info {
     width: 20%;
 }
@@ -451,6 +454,17 @@ body {
 }
 .simon h2, .ben h2, .dan h2 {
     width: 10%;
+}
+.fa-gears {
+    position: absolute;
+    filter: invert(100%);
+    opacity: 0.2;
+    width: 100%;
+    text-align: center;
+    transform: rotate(180deg);
+    font-size: 100vw;
+    z-index: 0;
+    overflow-x: hidden;
 }
 
 
@@ -627,6 +641,7 @@ body {
     .fa-hand-pointer {
         display: block;
         position: relative;
+        transform: rotate(160deg);
         filter: invert(100%);
         width: 100vw;
         text-align: center;
