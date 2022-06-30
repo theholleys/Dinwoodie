@@ -608,6 +608,7 @@ body {
         justify-content: flex-start;
         scroll-snap-type: x mandatory;
         scroll-padding: 0;
+        padding: 0em;
     }
     .the-team div {
         scroll-snap-align: center;
