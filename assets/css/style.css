@@ -1,0 +1,799 @@
+html {
+    font-family: "Century Gothic", "CenturyGothic", "AppleGothic", sans-serif; 
+    background-color: #231F20; 
+    background-repeat: none;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body {
+    padding: none;
+    margin: none;
+}
+
+
+
+.header {
+    position: sticky; 
+    top: 0px; 
+    background-color: #231f20; 
+    z-index: 10; 
+    font-size: 1.2rem;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: left;
+    grid-template-rows: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+    border-bottom: 1px solid white;
+}
+.navitem {
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-decoration: none; 
+    border-radius: 0rem; 
+    transition: 0.2s; 
+    background-color: transparent;
+    width: 100%;
+}
+:hover.navitem {
+    background-image: linear-gradient(0deg, #303030, #231f20); 
+    color: #ffffff;
+    border-bottom: 3px solid white;
+    margin-top: 3px;
+    text-shadow: 0 0 3px white;
+}
+.header-text {
+    color: rgb(218, 218, 218);
+    position: relative;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.toggle-button {
+    position: relative;
+    background-color: transparent;
+    left: 85vw;
+    top: 1rem;
+    margin-bottom: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index:11;
+}
+
+.toggle-button .bar {
+    height: 0.25rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 11;
+}
+
+#dinwoodie-logo {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#info {
+    text-align: center; 
+    background-color: #231f20; 
+    color: #ffffff; 
+    padding: 1rem 3rem 1rem 3rem;
+    font-size: 1.2rem; 
+    width: 80%; 
+    opacity: 0.9;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+.parallax {
+    background-image: url("../../images/Car engine.png");
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+    min-height: 250px;
+  
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    justify-items: center;
+  }
+
+.contactus {
+    color: #ffffff; 
+    border-radius: 0.5rem;
+    margin-left: 10px; 
+    margin-right: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem; 
+    position: relative;
+    max-width: 100%;
+    text-align: center;
+}
+.address {
+    color: #ffffff; 
+    border-radius: 0.5rem;
+    margin-left: 10px; 
+    margin-right: 10px;
+    margin-bottom: 1rem;
+    font-size: 1rem; 
+    font-weight: bold;
+    position: relative;
+    max-width: 100%;
+    text-align: center;
+    height: 30rem;
+}
+
+.black_link {
+    color: black;
+    transition: 0.2s;
+}
+.black_link:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 5px white;
+    text-decoration: none;
+}
+.white_link {
+    color: white;
+    transition: 0.2s;
+}
+.white_link:hover {
+    text-shadow: 0px 0px 5px white;
+    text-decoration: none;
+}
+.address_location {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: space-evenly;
+}
+.services-on-offer {
+    text-align: center; 
+    font-size: 2rem; 
+    color: white;
+}
+.grid-container-services {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    justify-content: space-evenly;
+    justify-items: center;
+}
+.optionlist {
+    font-size: 1.5rem; 
+    background-image: linear-gradient(0deg, #8B8B8C, #231f20);
+    color: white;
+    text-align: center; 
+    transition: 0.3s;
+    position: relative; 
+    height: 250px;
+    width: 250px; 
+    border-radius: 100%;
+    border: 0.3rem solid white;
+    font-weight: bold;
+}
+ .optionlist p {
+     font-weight: 300;
+     font-size: 1rem;
+     padding: 0rem 2rem;
+ }
+ .optionlist h3 {
+     font-size: 1.7rem;
+     padding-top: 2rem;
+ }
+.location-info {
+    background-image: url("../../images/Front of shop.png");
+
+    min-height: 150px;
+  
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    justify-items: center;
+    color: white;
+    text-shadow: 0 0 5px black;
+    font-weight: bold;
+    font-size: 2rem;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.team-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.team-info img {
+    width: 40%;
+    margin-right: 4rem;
+    border-radius: 1rem;
+}
+.team-info p {
+    width: 40%;
+}
+.about-page {
+    background-color: black;
+}
+.about-the-shop {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    margin: 0rem 0rem;
+    padding: 2rem 0rem;
+}
+.about-the-shop p {
+    color: white;
+    width: 40%;
+    text-align: right;
+    font-size: 1.5rem;
+    padding: 2rem;
+    background-color: #231f20;
+    border-radius: 1rem;
+}
+.about-the-shop img {
+    width: 30%;
+    max-width: 800px;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+.about-team {
+    background-color: #231f20;
+    border-radius: 1em;
+    max-width: 90%;
+    margin: 0% 5%;
+    padding: 0rem;
+}
+.about-team p {
+    color: white;
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 1rem 4rem;
+}
+
+.location-info-about {
+    max-width: 90%;
+    margin: 0rem 5%;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    background-image: url("../../images/Under car 1.png");
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    justify-items: center;
+    color: white;
+    text-shadow: 0 0 5px black;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.location-info-about p {
+    text-align: center;
+    padding: 1rem 4rem;
+}
+.grid-center {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    justify-items: center;
+    background-color: black;
+}
+.opening-times {
+    display: grid;
+    width: 50%;
+    justify-content: space-evenly;
+    color: white;
+    text-align: left;
+    /*background-image: url("../../images/Inside shop 1.png");*/
+    background-color: #231f20;
+    box-shadow: 0px 0px 20px #231f20;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    text-shadow: 2px 2px 5px black;
+    grid-gap: 0px;
+}
+.opening-times h4 {
+    font-size: 2rem;
+    grid-column: 1/3;
+}
+
+.open-days {
+    font-size: 1rem;
+    grid-column: 1;
+    padding: none;
+    margin: none;
+}
+.open-time {
+    grid-column: 3;
+    font-size: 1rem;
+    padding: none;
+    margin: none;
+}
+.grid-container-contact {
+    display: grid;
+    grid-template-columns: 100%;
+    scroll-snap-align: top;
+    scroll-margin-top: 3em;
+
+}
+
+.something-else {
+    color: white;
+    position: relative;
+    max-width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+}
+.something-else a {
+    color: white;
+}
+
+.w3w_link {
+    display: flex;
+    padding: 1rem 0rem;
+    justify-content: center;
+    background-color: rgb(155, 155, 155);
+    max-width: 100%;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.w3w {
+    width: 12rem;
+    transition: 0.1s;
+    border: 1px solid black;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+.w3w:hover {
+    border: 1px solid white;
+    filter: brightness(0.9);
+}
+.w3w_mobile{
+    width: 3rem;
+    display: none;
+    left: 1rem;
+    transition: 0.1s;
+    border: 1px solid black;
+}
+.mapouter {
+    position:relative;
+    text-align:right;
+    height: 90%;
+    max-width:100%;
+    margin: 1rem 0rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:100%;
+    width:80%;
+    border-radius: 1rem;
+}
+.contact-info-mobile {
+    display: none;
+}
+.the-team {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    margin: 1em 0em;
+}
+.the-team div {
+    margin: 1em 0rem;
+    width: 90%;
+    border-radius: 1em;
+    box-shadow: inset 0px 0px 5px black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #231F20;
+    padding: 1em 0em;
+}
+.personal-info {
+    width: 20%;
+}
+.fa-hand-pointer, .swiper {
+    display: none;
+}
+
+.simon-text {
+    color: white;
+}
+.simon-image {
+    width: 20%;
+    min-width: 8rem;
+}
+.ben-image {
+    width: 20%;
+    min-width: 8rem;
+}
+.ben-text {
+    color: white;
+}
+.dan-image {
+    width: 20%;
+    min-width: 8rem;
+}
+.dan-text {
+    color: white;
+}
+.simon p, .ben p, .dan p {
+    color: white;
+}
+.simon h2, .ben h2, .dan h2 {
+    width: 10%;
+}
+
+
+@media (max-width:1100px) {
+    body {
+        overflow: hidden;
+    }
+    .the-team {
+        flex-direction: row;
+        overflow-x: auto;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .the-team div {
+        justify-content: center;
+        align-items: center;
+        margin: 0em 2em;
+        border-radius: 1em;
+        box-shadow: inset 0px 0px 5px black;
+    }
+    .personal-info {
+        width: 80%;
+    }
+    .simon h2, .ben h2, .dan h2 {
+        width: 100%;
+        text-align: center;
+    }
+    .parallax {
+        background-attachment: scroll;
+    }
+    .location-info {
+        font-size: 1rem;
+    }
+    .location-info-about {
+        background-attachment: scroll;
+    }
+    .grid-container-services {
+        grid-template-columns: 30% 30%;
+    }
+    .optionlist {
+        text-align: center;
+        border-radius: 100%;
+        border-width: 0.5rem;
+        max-height: 300px;
+        max-width: 300px;
+        margin: 0.5rem;
+    }
+    .optionlist p {
+        font-size: 1rem;
+    }
+    .optionlist h3 {
+        font-size: 2rem;
+        padding-top: 2rem;
+    }
+    .something-else {
+        padding: 1rem;
+    }
+    .about-the-shop {
+        flex-wrap: wrap;
+    }
+    .about-the-shop p {
+        padding: 1rem;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .the-team div {
+        flex-direction: column;
+    }
+    .about-the-shop img {
+        margin-top: 6rem;
+    }
+    .opening-times {
+        max-width: 80%;
+        padding: 0rem 1rem;
+    }
+    .opening-times h4 {
+        font-size: 2rem;
+    }
+    .location-info p {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .team-info p {
+        font-size: 1.5rem;
+        padding-top: 0%;
+    }
+
+    .open-days {
+        font-size: 1rem;
+        grid-column: 1;
+        font-weight: 700;
+    }
+    .open-time {
+        grid-column: 3;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .grid-container-contact {
+        display: grid;
+        grid-template-columns: 100%;
+        scroll-margin-top: 0em;
+    }
+    .contactus {
+        font-size: 1rem;
+    }
+    .address {
+        font-size: 1rem;
+    }
+    .mapouter {
+        max-width: 100%; 
+    }
+    .gmap_canvas {
+        width: 100%;
+    }
+
+    .toggle-button {
+        display: flex;
+        height: 2rem;
+        width: 2rem;
+        font-size: 0.7rem;
+        padding: 0px;
+    }
+    
+    .header {
+        display: none;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, 70px);
+        justify-items: center;
+        justify-content: space-evenly;
+        position: absolute;
+        background-color: #231f20d8;
+    }
+    .navitem {
+        padding: 1rem;
+        border-radius: 0px;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .header.active {
+        display: grid;
+        grid-template-columns: 100vw;
+
+    }
+    .header-text {
+        display: none;
+    }
+    .w3w_link {
+        width: 100%;
+    }
+}
+
+@media (max-width:600px) {
+    .the-team {
+        justify-content: flex-start;
+        scroll-snap-type: x mandatory;
+        scroll-padding: 0;
+    }
+    .the-team div {
+        scroll-snap-align: center;
+        scroll-snap-stop: always;
+        padding: 0em;
+        margin: 0em 1em;
+        border-radius: 1em;
+        padding: 0em 0.5em;
+    }
+    .personal-info {
+        width: 90%;
+    }
+    .swiper {
+        display: block;
+    }
+    .fa-hand-pointer {
+        display: block;
+        position: relative;
+        filter: invert(100%);
+        width: 100vw;
+        text-align: center;
+        font-size: 2rem;
+        animation: flash 2s both infinite;
+    }
+    @keyframes flash {
+        0% {
+            left: 1em;
+            opacity: 0;
+        }
+        50% {
+            opacity: 0.6;
+            left: 0em;
+        }
+        100% {
+            opacity: 0;
+            left:-1em;
+        }
+    }
+    .simon-image, .ben-image, .dan-image {
+        width: 70vw;
+    }
+    .grid-container-contact {
+        scroll-margin-top: 0em;
+    }
+    .about-the-shop {
+        grid-template-columns: 100%;
+    }
+    .about-the-shop p {
+        padding: 1rem 1rem;
+        margin: 0rem;
+        text-align: center;
+        font-size: 1rem;
+        border-bottom-right-radius: 0rem;
+        border-top-left-radius: 1rem;
+        /*Making the width of the text the same as the image for mobile*/
+        width: 81%;
+    }
+    .about-the-shop img {
+        width: 90%;
+        border-top-left-radius: 0rem;
+        border-top-right-radius: 0rem;
+        padding: 0rem;
+        margin: 0rem;
+    }
+    .desktop-image {
+        display: none;
+    }
+    .mobile-image {
+        display: block;
+    }
+    .team-info {
+        flex-direction: row;
+
+    }
+    .team-info p {
+        font-size: 1rem;
+        text-align: center;
+        width: 90%;
+    }
+    .team-info img {
+        padding: 0rem;
+        margin: 0rem;
+        width: 90%;
+    }
+    .address {
+        font-size: 0.5rem;
+    }
+    .about-team {
+        grid-template-columns: 100%;
+    }
+    .about-team p {
+        padding: 1rem;
+        text-align: center;
+        grid-row: 1;
+        font-size: 1rem;
+    }
+    .about-team img {
+        grid-row: 2;
+    }
+    .toggle-button {
+        display: flex;
+        height: 1.2rem;
+        width: 1.2rem;
+        left: 85vw;
+        font-size: 0.7rem;
+    }
+    .toggle-button .bar {
+        height: 3px;
+    }
+    .navitem {
+        font-size: 1rem; 
+    }
+    .header {
+        grid-template-rows: repeat(3, 50px);
+        position: absolute;
+    }
+    .grid-container-services {
+        display: grid;
+        grid-template-columns: 80%;
+        justify-items: center;
+    }
+    .services-on-offer h2 {
+        font-size: 2rem;
+    }
+    .optionlist {
+        margin: 0.5rem;
+        text-align: center;
+        border-radius: 100%;
+        border-width: 0.3rem;
+
+        max-width: 200px;
+        max-height: 200px;
+    }
+    .optionlist p {
+        font-size: 0.7rem;
+        padding: 0rem 1rem 0rem 1rem;
+    }
+    .optionlist h3 {
+        font-size: 1.7rem;
+        padding-top: 1rem;
+    }
+    .opening-times {
+        width: 90%;
+    }
+    .opening-times h4 {
+        font-size: 1.5rem;
+        grid-column: 1/3;
+        font-weight: 900;
+    }
+    .open-days {
+        font-size: 0.7rem;
+        grid-column: 1;
+        font-weight: 700;
+    }
+    .open-time {
+        grid-column: 3;
+        font-size: 0.7rem;
+        font-weight: 700;
+    }
+    .location-info-about p {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    .ryan-image {
+        padding-top: 0%;
+        margin-top: -1rem;
+        transform: scale(0.7);
+    }
+    .something-else {
+        font-size: 1.5rem;
+    }
+    .w3w_link {
+        max-width: 100%;
+        font-size: 1rem;
+    }
+    .w3w {
+        display: none;
+    }
+    .w3w_mobile {
+        display: block;
+    }
+    .contact-info-desktop {
+        display: none;
+    }
+    .contact-info-mobile {
+        display: block;
+        text-align: left;
+    }
+}
+
