@@ -94,18 +94,31 @@ body {
 }
 
 .parallax {
-    background-image: url("../../images/Car engine.png");
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
 
-    min-height: 250px;
-  
-
+    position: relative;
+    min-height: 230px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
     justify-items: center;
+  }
+  .info {
+    transform-style: preserve-3d;
+    perspective: 10px;
+  }
+  .parallax img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    filter: brightness(0.6) blur(2px);
+    transform: translateZ(-10px);
   }
 
 .contactus {
@@ -424,27 +437,15 @@ body {
     display: none;
 }
 
-.simon-text {
+.simon-text, .ben-text, .dan-text {
     color: white;
 }
-.simon-image {
+.simon-image, .ben-image, .dan-image {
     width: 20%;
     min-width: 8rem;
+    border-radius: .5em;
 }
-.ben-image {
-    width: 20%;
-    min-width: 8rem;
-}
-.ben-text {
-    color: white;
-}
-.dan-image {
-    width: 20%;
-    min-width: 8rem;
-}
-.dan-text {
-    color: white;
-}
+
 .simon p, .ben p, .dan p {
     color: white;
 }
