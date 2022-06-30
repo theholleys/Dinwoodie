@@ -230,6 +230,8 @@ body {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 20px;
+    background-color: #231f20a9;
+    box-shadow: inset 0px 0px 20px black;
 }
 .team-info img {
     width: 40%;
@@ -459,6 +461,17 @@ body {
     position: absolute;
     filter: invert(100%);
     opacity: 0.2;
+    width: 100%;
+    text-align: center;
+    transform: rotate(180deg);
+    font-size: 100vw;
+    z-index: 0;
+    overflow-x: hidden;
+}
+.fa-garage-car {
+    position: absolute;
+    filter: invert(100%);
+    opacity: 1;
     width: 100%;
     text-align: center;
     transform: rotate(180deg);
