@@ -534,7 +534,8 @@ body {
         flex-direction: column;
     }
     .about-the-shop img {
-        margin-top: 6rem;
+        margin-top: 0rem;
+        width: 40%;
     }
     .opening-times {
         max-width: 80%;
