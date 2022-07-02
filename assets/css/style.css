@@ -13,7 +13,6 @@ body {
 }
 
 
-
 .header {
     position: sticky; 
     top: 0px; 
@@ -87,16 +86,15 @@ body {
     color: #ffffff; 
     padding: 1rem 3rem 1rem 3rem;
     font-size: 1.2rem; 
-    width: 80%; 
+    width: 90%; 
     opacity: 0.9;
     color: white;
     text-shadow: 0 0 5px black;
+    transform-style: preserve-3d;
+    perspective: 10px;
 }
 
 .parallax {
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-
     position: relative;
     min-height: 230px;
     background-position: center;
@@ -105,11 +103,7 @@ body {
     display: grid;
     justify-items: center;
   }
-  .info {
-    transform-style: preserve-3d;
-    perspective: 10px;
-  }
-  .parallax img {
+  .car-engine {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -118,7 +112,10 @@ body {
     left: 0px;
     z-index: -1;
     filter: brightness(0.6) blur(2px);
-    transform: translateZ(-10px);
+    transform: translateZ(-10px) scale(2);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    box-shadow: 0px 5px 20px black;
   }
 
 .contactus {
@@ -230,7 +227,7 @@ body {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 20px;
-    background-color: #231f20a9;
+    background-color: #231f20d6;
     box-shadow: inset 0px 0px 20px black;
 }
 .team-info img {
