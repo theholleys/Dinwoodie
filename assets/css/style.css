@@ -14,18 +14,19 @@ body {
 
 
 .header {
-    position: sticky; 
+    position: sticky;
+    width: 76%;
     top: 0px; 
     background-color: #231f20; 
-    z-index: 10; 
+    z-index: 5; 
     font-size: 1.2rem;
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    justify-content: left;
-    grid-template-rows: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     padding-top: 1rem;
     padding-bottom: 0rem;
     border-bottom: 1px solid white;
+    border-bottom-right-radius: 1em;
 }
 .navitem {
     color: #ffffff;
@@ -36,14 +37,16 @@ body {
     border-radius: 0rem; 
     transition: 0.2s; 
     background-color: transparent;
-    width: 100%;
+    padding-bottom: 2px;
+    width: 80%;
+    
 }
 :hover.navitem {
     background-image: linear-gradient(0deg, #303030, #231f20); 
     color: #ffffff;
     border-bottom: 3px solid white;
-    margin-top: 3px;
     text-shadow: 0 0 3px white;
+    padding-bottom: 0px;
 }
 .header-text {
     color: rgb(218, 218, 218);
@@ -57,7 +60,7 @@ body {
     position: relative;
     background-color: transparent;
     left: 85vw;
-    top: 1rem;
+    top: 1em;
     margin-bottom: 1rem;
     display: none;
     flex-direction: column;
@@ -65,7 +68,10 @@ body {
     z-index:11;
 }
 
-.toggle-button .bar {
+.bar {
+    position: relative;
+    margin: 0%;
+    padding: 0%;
     height: 0.25rem;
     width: 100%;
     background-color: white;
@@ -95,6 +101,7 @@ body {
 }
 
 .parallax {
+    margin-top: 1em;
     position: relative;
     min-height: 230px;
     background-position: center;
@@ -325,6 +332,7 @@ body {
     text-shadow: 2px 2px 5px black;
     grid-gap: 0px;
     z-index: 1;
+    scroll-margin-top: 3em;
 }
 .opening-times h4 {
     font-size: 2rem;
@@ -347,7 +355,7 @@ body {
     display: grid;
     grid-template-columns: 100%;
     scroll-snap-align: top;
-    scroll-margin-top: 3em;
+    scroll-margin-top: 2em;
 
 }
 
@@ -550,6 +558,7 @@ body {
     .opening-times {
         max-width: 80%;
         padding: 0rem 1rem;
+        scroll-margin-top: 1em;
     }
     .opening-times h4 {
         font-size: 2rem;
@@ -599,6 +608,38 @@ body {
         font-size: 0.7rem;
         padding: 0px;
     }
+    .bar-one.active {
+        position: absolute;
+        top: 0em;
+        animation: rotate45 1s both;
+    }
+    @keyframes rotate45 {
+        100% {
+            top: 0%;
+            transform: rotate(45deg);
+        }
+    }
+    .bar-two.active {
+        position: absolute;
+        top: .75em;
+        animation: fade-out 1s both;
+    }
+    @keyframes fade-out {
+        100% {
+            opacity: 0;
+        }
+    }
+    .bar-three.active {
+        position: absolute;
+        top: 1.25em;
+        animation: rotate135 1s both;
+    }
+    @keyframes rotate135 {
+        100% {
+            transform: rotate(-45deg);
+            top: 0%;
+        }
+    }
     
     .header {
         display: none;
@@ -618,7 +659,18 @@ body {
     .header.active {
         display: grid;
         grid-template-columns: 100vw;
-
+        top: -10em;
+        animation: fade-in 1s both;
+    }
+    @keyframes fade-in{
+        0% {
+            opacity: 0;
+            top: -15em;
+        }
+        100% {
+            opacity: 1;
+            top: 0em;
+        }
     }
     .header-text {
         display: none;
@@ -741,7 +793,7 @@ body {
         left: 85vw;
         font-size: 0.7rem;
     }
-    .toggle-button .bar {
+    .bar {
         height: 3px;
     }
     .navitem {
