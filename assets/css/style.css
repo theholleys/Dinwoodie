@@ -750,18 +750,21 @@ body {
     .grid-container-contact {
         scroll-margin-top: 0em;
     }
+    .about-the-shop {
+        width: 100%;
+    }
     .about-the-shop p {
-        padding: 1rem 1rem;
-        margin: 0rem;
+        padding: 5%;
+        margin: 0;
         text-align: center;
         font-size: 1rem;
         border-bottom-right-radius: 0rem;
         border-top-left-radius: 1rem;
         /*Making the width of the text the same as the image for mobile*/
-        width: 81%;
+        width: 80%;
     }
     .about-the-shop img {
-        width: 90%;
+        width: 90vw;
         border-top-left-radius: 0rem;
         border-top-right-radius: 0rem;
         padding: 0rem;
