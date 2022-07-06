@@ -8,43 +8,43 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    padding: none;
-    margin: none;
+    padding: 0;
+    margin: 0;
 }
 
 
 .header {
     position: sticky;
-    width: 76%;
+    width: 100%;
     top: 0px; 
     background-color: #231f20; 
     z-index: 5; 
     font-size: 1.2rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     padding-top: 1rem;
-    padding-bottom: 0rem;
-    border-bottom: 1px solid white;
-    border-bottom-right-radius: 1em;
+    padding-bottom: .2em;
+    box-shadow: 0px 5px 20px #231f20;
 }
 .navitem {
     color: #ffffff;
     text-align: center;
     display: flex;
+    gap: 1em;
     justify-content: center;
     text-decoration: none; 
     border-radius: 0rem; 
     transition: 0.2s; 
     background-color: transparent;
     padding-bottom: 2px;
-    width: 80%;
+    width: 15%;
     
 }
 :hover.navitem {
     background-image: linear-gradient(0deg, #303030, #231f20); 
     color: #ffffff;
-    border-bottom: 3px solid white;
+    border-bottom: 2px solid white;
     text-shadow: 0 0 3px white;
     padding-bottom: 0px;
 }
@@ -57,8 +57,8 @@ body {
 }
 
 .toggle-button {
-    position: relative;
-    background-color: transparent;
+    position: fixed;
+    background-color: #000000b3;
     left: 85vw;
     top: 1em;
     margin-bottom: 1rem;
@@ -247,10 +247,16 @@ body {
 }
 .about-page {
     background-color: black;
+    position: relative;
+    width: 100vw;
+    left: 0px;
+    padding: 0;
+    margin: 0;
 }
 .about-the-shop {
     display: flex;
-
+    width: 100%;
+    left: 0px;
     justify-content: center;
     align-items: center;
     margin: 0rem 0rem;
@@ -273,14 +279,16 @@ body {
 }
 .wrapper {
     display: flex;
+    width: 100vw;
     justify-content: center;
+    align-items: center;
 }
 .about-team {
     background-color: #231f20;
     border-radius: 1em;
     max-width: 90%;
-    margin: 0% 5%;
-    padding: 0rem;
+    margin: 0%;
+    padding: 0%;
 }
 .about-team p {
     color: white;
@@ -421,14 +429,18 @@ body {
 }
 .the-team {
     display: flex;
-    width: 100%;
+    left: 0px;
+    max-width: 100vw;
     flex-direction: column;
     align-items: center;
     background-color: transparent;
     margin: 1em 0em;
+    padding: 0em 1em;
+    overflow-x: auto;
+    gap: 1em;
 }
 .the-team div {
-    margin: 1em 0rem;
+    padding: .5em;
     width: 90%;
     border-radius: 1em;
     box-shadow: inset 0px 0px 5px black;
@@ -466,10 +478,11 @@ body {
     position: absolute;
     filter: invert(100%);
     opacity: 0.2;
-    width: 100%;
+    left: 0px;
+    max-width: 80vw;
     text-align: center;
     transform: rotate(180deg);
-    font-size: 100vw;
+    font-size: 80vw;
     z-index: 0;
     overflow-x: hidden;
 }
@@ -486,9 +499,13 @@ body {
 }
 
 
+
 @media (max-width:1100px) {
     body {
         overflow: hidden;
+    }
+    #dinwoodie-logo {
+        margin-top: 1em;
     }
     .the-team {
         flex-direction: row;
@@ -499,7 +516,6 @@ body {
     .the-team div {
         justify-content: center;
         align-items: center;
-        margin: 0em 2em;
         border-radius: 1em;
         box-shadow: inset 0px 0px 5px black;
     }
@@ -606,22 +622,22 @@ body {
         height: 2rem;
         width: 2rem;
         font-size: 0.7rem;
-        padding: 0px;
+        padding: .7em;
+        border-radius: .5em;
     }
     .bar-one.active {
-        position: absolute;
-        top: 0em;
         animation: rotate45 1s both;
     }
     @keyframes rotate45 {
-        100% {
+        0% {
             top: 0%;
+        }
+        100% {
+            top: 42.5%;
             transform: rotate(45deg);
         }
     }
     .bar-two.active {
-        position: absolute;
-        top: .75em;
         animation: fade-out 1s both;
     }
     @keyframes fade-out {
@@ -630,14 +646,15 @@ body {
         }
     }
     .bar-three.active {
-        position: absolute;
-        top: 1.25em;
         animation: rotate135 1s both;
     }
     @keyframes rotate135 {
+        0% {
+            top: 0%;
+        }
         100% {
             transform: rotate(-45deg);
-            top: 0%;
+            top: -42.5%;
         }
     }
     
@@ -655,9 +672,11 @@ body {
         border-radius: 0px;
         font-size: 1.5rem;
         text-align: center;
+        width: 80%;
     }
     .header.active {
         display: grid;
+        position: fixed;
         grid-template-columns: 100vw;
         top: -10em;
         animation: fade-in 1s both;
@@ -681,25 +700,25 @@ body {
 }
 
 @media (max-width:600px) {
+    #dinwoodie-logo {
+        margin-top: 1em;
+    }
     .the-team {
         justify-content: flex-start;
         scroll-snap-type: x mandatory;
         scroll-padding: 0;
-        padding: 0em;
     }
     .the-team div {
         scroll-snap-align: center;
         scroll-snap-stop: always;
-        padding: 0em;
-        margin: 0em 1em;
         border-radius: 1em;
-        padding: 0em 0.5em;
     }
     .personal-info {
         width: 90%;
     }
     .swiper {
         display: block;
+        max-width: 100vw;
     }
     .fa-hand-pointer {
         display: block;
@@ -730,9 +749,6 @@ body {
     }
     .grid-container-contact {
         scroll-margin-top: 0em;
-    }
-    .about-the-shop {
-        grid-template-columns: 100%;
     }
     .about-the-shop p {
         padding: 1rem 1rem;
@@ -773,9 +789,6 @@ body {
     }
     .address {
         font-size: 0.5rem;
-    }
-    .about-team {
-        grid-template-columns: 100%;
     }
     .about-team p {
         padding: 1rem;
