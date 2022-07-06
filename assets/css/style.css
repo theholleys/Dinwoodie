@@ -505,7 +505,7 @@ body {
         overflow: hidden;
     }
     #dinwoodie-logo {
-        margin-top: 1em;
+        margin-top: 2em;
     }
     .the-team {
         flex-direction: row;
@@ -625,6 +625,7 @@ body {
         padding: .7em;
         border-radius: .5em;
     }
+
     .bar-one.active {
         animation: rotate45 1s both;
     }
@@ -701,7 +702,7 @@ body {
 
 @media (max-width:600px) {
     #dinwoodie-logo {
-        margin-top: 1em;
+        margin-top: 2em;
     }
     .the-team {
         justify-content: flex-start;
