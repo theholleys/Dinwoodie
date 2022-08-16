@@ -11,3 +11,24 @@ toggleButton.addEventListener("click", (menuItems) => {
     barTwo.classList.toggle("active");
     barThree.classList.toggle("active");
 })
+
+
+const acceptCookies = document.getElementById("accept-cookies");
+const declineCookies = document.getElementById("decline-cookies");
+const cookieModal = document.querySelector(".cookie-modal");
+const googleMap = document.querySelector(".mapouter");
+
+acceptCookies.addEventListener('click', () => {
+    //cookieModal.style.display = "none";
+    document.cookie = "mapsEnabled=true;";
+    const mapsEnabled = "TRUE";
+    console.log(mapsEnabled);
+})
+
+declineCookies.addEventListener('click', () => {
+    //cookieModal.style.display = "none";
+    //googleMap.style.display = "none";
+    document.cookie = "mapsEnabled=false;";
+    const mapsEnabled = "FALSE";
+    console.log(mapsEnabled);
+})
