@@ -513,7 +513,7 @@ body {
 }
 .testimonials a {
     color: white;
-    font-size: 4.5vw;
+    font-size: 4vw;
     text-align: center;
 }
 .fa-star {
@@ -688,10 +688,10 @@ footer > a {
 
     .toggle-button {
         display: flex;
-        height: 2rem;
-        width: 2rem;
+        height: 1.6em;
+        width: 2em;
         font-size: 0.7rem;
-        padding: .7em;
+        padding: .5em;
         border-radius: .5em;
     }
 
@@ -874,8 +874,6 @@ footer > a {
     }
     .toggle-button {
         display: flex;
-        height: 1.2rem;
-        width: 1.2rem;
         left: 85vw;
         font-size: 0.7rem;
     }
