@@ -62,8 +62,11 @@ h1 {
 .toggle-button {
     position: fixed;
     background-color: #000000b3;
-    left: 85vw;
-    top: 1em;
+    right: 20px;
+    top: 10px;
+    height: 24px;
+    width: 34px;
+    padding: 5px;
     margin-bottom: 1rem;
     display: none;
     flex-direction: column;
@@ -73,12 +76,12 @@ h1 {
 
 .bar {
     position: relative;
-    margin: 0%;
+    margin: 0;
     padding: 0%;
-    height: 0.25rem;
+    height: 3px;
     width: 100%;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 5px;
     z-index: 11;
 }
 
@@ -573,6 +576,9 @@ footer > a {
 
 
 @media (max-width:1100px) {
+    .toggle-button {
+        display: flex;
+    }
     body {
         overflow: hidden;
     }
@@ -689,29 +695,20 @@ footer > a {
         width: 100%;
     }
 
-    .toggle-button {
-        display: flex;
-        height: 1.6em;
-        width: 2em;
-        font-size: 0.7rem;
-        padding: .5em;
-        border-radius: .5em;
-    }
-
     .bar-one.active {
-        animation: rotate45 1s both;
+        animation: rotate45 .5s both;
     }
     @keyframes rotate45 {
         0% {
-            top: 0%;
+            top: 0px;
         }
         100% {
-            top: 42.5%;
+            top: 10px;
             transform: rotate(45deg);
         }
     }
     .bar-two.active {
-        animation: fade-out 1s both;
+        animation: fade-out .5s both;
     }
     @keyframes fade-out {
         100% {
@@ -719,15 +716,15 @@ footer > a {
         }
     }
     .bar-three.active {
-        animation: rotate135 1s both;
+        animation: rotate135 .5s both;
     }
     @keyframes rotate135 {
         0% {
             top: 0%;
         }
         100% {
+            top: -10px;
             transform: rotate(-45deg);
-            top: -42.5%;
         }
     }
     
@@ -773,6 +770,9 @@ footer > a {
 }
 
 @media (max-width:600px) {
+    .toggle-button {
+        display: flex;
+    }
     #dinwoodie-logo {
         margin-top: 2em;
     }
@@ -874,11 +874,6 @@ footer > a {
     }
     .about-team img {
         grid-row: 2;
-    }
-    .toggle-button {
-        display: flex;
-        left: 85vw;
-        font-size: 0.7rem;
     }
     .bar {
         height: 3px;
