@@ -467,18 +467,18 @@ h1 {
     display: none;
 }
 
-.simon-text, .ben-text, .dan-text {
+.simon-text, .ben-text, .dan-text, .ryan-text {
     color: white;
 }
-.simon-image, .ben-image, .dan-image {
+.simon-image, .ben-image, .dan-image, .ryan-team-image {
     width: 20%;
     min-width: 8rem;
 }
 
-.simon p, .ben p, .dan p {
+.simon p, .ben p, .dan p, .ryan p {
     color: white;
 }
-.simon h2, .ben h2, .dan h2 {
+.simon h2, .ben h2, .dan h2, .ryan h2 {
     width: 10%;
 }
 .fa-gears {
@@ -608,7 +608,7 @@ footer > a {
     .personal-info {
         width: 80%;
     }
-    .simon h2, .ben h2, .dan h2 {
+    .simon h2, .ben h2, .dan h2, .ryan h2 {
         width: 100%;
         text-align: center;
     }
@@ -825,7 +825,7 @@ footer > a {
             left:-1em;
         }
     }
-    .simon-image, .ben-image, .dan-image {
+    .simon-image, .ben-image, .dan-image, .ryan-team-image {
         width: 70vw;
     }
     .grid-container-contact {
