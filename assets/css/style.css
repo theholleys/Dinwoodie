@@ -27,7 +27,7 @@ h1 {
     flex-direction: row;
     justify-content: center;
     padding-top: 1rem;
-    padding-bottom: .2em;
+    padding-bottom: .5em;
     box-shadow: 0px 5px 20px #231f20;
 }
 .navitem {
@@ -40,16 +40,14 @@ h1 {
     border-radius: 0rem; 
     transition: 0.2s; 
     background-color: transparent;
-    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
     width: 15%;
     
 }
-:hover.navitem {
-    background-image: linear-gradient(0deg, #303030, #231f20); 
+.navitem:hover {
+    /* background-image: linear-gradient(0deg, #303030, #231f20);  */
     color: #ffffff;
     border-bottom: 2px solid white;
-    text-shadow: 0 0 3px white;
-    padding-bottom: 0px;
 }
 .header-text {
     color: rgb(218, 218, 218);
@@ -103,8 +101,6 @@ h1 {
     opacity: 0.9;
     color: white;
     text-shadow: 0 0 5px black;
-    transform-style: preserve-3d;
-    perspective: 10px;
 }
 
 .parallax {
@@ -124,12 +120,8 @@ h1 {
     object-fit: cover;
     top: 0px;
     left: 0px;
-    z-index: -1;
+    z-index: -10;
     filter: brightness(0.6) blur(2px);
-    transform: translateZ(-10px) scale(2);
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    box-shadow: 0px 5px 20px black;
   }
 
 .contactus {
@@ -139,7 +131,7 @@ h1 {
     margin-right: 10px;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    font-size: 1.5rem; 
+    font-size: 1.2rem; 
     position: relative;
     max-width: 100%;
     text-align: center;
@@ -150,7 +142,7 @@ h1 {
     margin-left: 10px; 
     margin-right: 10px;
     margin-bottom: 1rem;
-    font-size: 1rem; 
+    font-size: 1.2rem; 
     font-weight: bold;
     position: relative;
     max-width: 100%;
@@ -193,7 +185,7 @@ h1 {
     justify-items: center;
 }
 .optionlist {
-    font-size: 1.5rem; 
+    font-size: 1.2rem; 
     background-image: linear-gradient(0deg, #8B8B8C, #231f20);
     color: white;
     text-align: center; 
@@ -207,7 +199,7 @@ h1 {
 }
  .optionlist p {
      font-weight: 300;
-     font-size: 1rem;
+     font-size: 1.2rem;
      padding: 0rem 2rem;
  }
  .optionlist h3 {
@@ -219,18 +211,22 @@ h1 {
 
     min-height: 150px;
   
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: grid;
+    display: flex;
+    align-items: center;
     justify-items: center;
     color: white;
     text-shadow: 0 0 5px black;
     font-weight: bold;
-    font-size: 2rem;
-    width: 100%;
+    font-size: 1.2rem;
+    max-width: 100%;
     margin-bottom: 20px;
+}
+.location-info > p {
+    text-align: center;
 }
 
 .team-info{
@@ -238,7 +234,7 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-evenly;
     color: white;
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 20px;
     background-color: #231f20d6;
@@ -273,7 +269,7 @@ h1 {
     color: white;
     width: 40%;
     text-align: right;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 2rem;
     background-color: #231f20;
     border-radius: 1rem;
@@ -319,12 +315,13 @@ h1 {
     justify-items: center;
     color: white;
     text-shadow: 0 0 5px black;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 .location-info-about p {
     text-align: center;
     padding: 1rem 4rem;
+    font-size: 1.2rem;
 }
 .grid-center {
     display: grid;
@@ -356,14 +353,14 @@ h1 {
 }
 
 .open-days {
-    font-size: 1rem;
+    font-size: 1.2rem;
     grid-column: 1;
     padding: none;
     margin: none;
 }
 .open-time {
     grid-column: 3;
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: none;
     margin: none;
 }
@@ -618,9 +615,7 @@ footer > a {
     .parallax {
         background-attachment: scroll;
     }
-    .location-info {
-        font-size: 1rem;
-    }
+
     .location-info-about {
         background-attachment: scroll;
     }
@@ -668,24 +663,20 @@ footer > a {
     .opening-times h4 {
         font-size: 2rem;
     }
-    .location-info p {
-        text-align: center;
-        font-size: 1.5rem;
-    }
 
     .team-info p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         padding-top: 0%;
     }
 
     .open-days {
-        font-size: 1rem;
+        font-size: 1.2rem;
         grid-column: 1;
         font-weight: 700;
     }
     .open-time {
         grid-column: 3;
-        font-size: 1rem;
+        font-size: 1.2rem;
         font-weight: 700;
     }
     .grid-container-contact {
@@ -694,10 +685,10 @@ footer > a {
         scroll-margin-top: 0em;
     }
     .contactus {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     .address {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     .mapouter {
         max-width: 100%; 
@@ -751,7 +742,7 @@ footer > a {
     .navitem {
         padding: 1rem;
         border-radius: 0px;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         text-align: center;
         width: 80%;
     }
@@ -841,7 +832,7 @@ footer > a {
         padding: 5%;
         margin: 0;
         text-align: center;
-        font-size: 1rem;
+        font-size: 1.2rem;
         border-bottom-right-radius: 0rem;
         border-top-left-radius: 1rem;
         /*Making the width of the text the same as the image for mobile*/
@@ -865,7 +856,7 @@ footer > a {
 
     }
     .team-info p {
-        font-size: 1rem;
+        font-size: 1.2rem;
         text-align: center;
         width: 90%;
     }
@@ -881,7 +872,7 @@ footer > a {
         padding: 1rem;
         text-align: center;
         grid-row: 1;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     .about-team img {
         grid-row: 2;
@@ -890,7 +881,7 @@ footer > a {
         height: 3px;
     }
     .navitem {
-        font-size: 1rem; 
+        font-size: 1.2rem; 
     }
     .header {
         grid-template-rows: repeat(3, 50px);
@@ -914,7 +905,7 @@ footer > a {
         max-height: 200px;
     }
     .optionlist p {
-        font-size: 0.7rem;
+        font-size: .8rem;
         padding: 0rem 1rem 0rem 1rem;
     }
     .optionlist h3 {
@@ -925,22 +916,22 @@ footer > a {
         width: 90%;
     }
     .opening-times h4 {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         grid-column: 1/3;
         font-weight: 900;
     }
     .open-days {
-        font-size: 0.7rem;
+        font-size: 1.2rem;
         grid-column: 1;
         font-weight: 700;
     }
     .open-time {
         grid-column: 3;
-        font-size: 0.7rem;
+        font-size: 1.2rem;
         font-weight: 700;
     }
     .location-info-about p {
-        font-size: 1rem;
+        font-size: 1.2rem;
         padding: 1rem;
     }
     .ryan-image {
@@ -949,11 +940,11 @@ footer > a {
         transform: scale(0.7);
     }
     .something-else {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .w3w_link {
         max-width: 100%;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     .w3w {
         display: none;
